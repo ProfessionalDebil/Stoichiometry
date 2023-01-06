@@ -1,4 +1,5 @@
 class Element:
+<<<<<<< HEAD:element.py
     """
     This is the class for Elements such as H, Fe, and O
 
@@ -20,3 +21,6 @@ class Element:
         self.name = name
         self.symbol = symbol
         self.mass = mass
+=======
+    
+>>>>>>> 63fa108121e1df7e4cd5ea045a0731f837998892:Element.py
