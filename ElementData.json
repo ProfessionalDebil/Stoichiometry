@@ -4,5 +4,12 @@
         "name": "Hydrogen",
         "symbol": "H",
         "mass": 1.00784
+    },
+    
+    {
+        "number": 2,
+        "name": "Helium",
+        "symbol": "He",
+        "mass": 4.002602
     }
 ]
