@@ -1,5 +1,4 @@
 from element import *
-from typing import __annotations__
 
 class Molecule:
     """

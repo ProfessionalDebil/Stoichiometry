@@ -11,5 +11,61 @@
         "name": "Helium",
         "symbol": "He",
         "mass": 4.002602
+    },
+    
+    {
+        "number": 3,
+        "name": "Lithium",
+        "symbol": "Li",
+        "mass": 6.941
+    },
+    
+    {
+        "number": 4,
+        "name": "Beryllium",
+        "symbol": "Be",
+        "mass": 9.012182
+    },
+    
+    {
+        "number": 5,
+        "name": "Boron",
+        "symbol": "B",
+        "mass": 10.811
+    },
+    
+    {
+        "number": 6,
+        "name": "Carbon",
+        "symbol": "C",
+        "mass": 12.001
+    },
+    
+    {
+        "number": 7,
+        "name": "Nitrogen",
+        "symbol": "N",
+        "mass": 14.0067
+    },
+    
+    {
+        "number": 8,
+        "name": "Oxygen",
+        "symbol": "O",
+        "mass": 15.999
+    },
+    
+    {
+        "number": 9,
+        "name": "Fluor",
+        "symbol": "F",
+        "mass": 18.998403
+    },
+    
+    {
+        "number": 10,
+        "name": "Neon",
+        "symbol": "Ne",
+        "mass": 20.1797
     }
 ]
