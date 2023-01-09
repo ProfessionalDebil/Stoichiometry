@@ -15,7 +15,7 @@ class ElementManager:
                 Returns the mass of the molecule
     """
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.element_count: int = 118
         self.elements: list[Element] = [None for _ in range(self.element_count)]
         self.element_index: dict[str, int] = {}
@@ -68,9 +68,21 @@ class ElementManager:
         """
 
         if isinstance(target, int): # if user supplies atomic number
-            return self.elements[target - 1]
+            try:
+                return self.elements[target - 1]
+            except IndexError:
+                raise ElementNotDefined
 
         elif isinstance(target, str): # if user supplies element symbol
-            return self.elements[self.element_index[target]]
+            try:
+                return self.elements[self.element_index[target]]
+            except KeyError:
+                raise ElementNotDefined
 
         raise ElementNotDefined
+
+    #def formula_to_molecule(self, formula: str) -> Molecule:
+    #    isNum = False
+
+    #    for letter in formula:
+    #        

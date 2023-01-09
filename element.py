@@ -17,13 +17,28 @@ class Element:
     Methods:
     """
     
-    def __init__(self, number: int, name: str, symbol: str, mass: float):
+    def __init__(self, number: int, name: str, symbol: str, mass: float) -> None:
         self.number = number
         self.name = name
         self.symbol = symbol
         self.mass = mass
 
-    def __add__(self, other: "Element") -> Molecule:
+    def __eq__(self, other):
+        if not isinstance(other, Element):
+            return TypeError(f"Object of type {type(other).__name__} is not an Element")
+
+        return self.number == other.number
+
+    def __hash__(self):
+        return hash((self.number, self.symbol))
+
+    def __str__(self):
+        return self.symbol
+
+    def __repr__(self):
+        return self.symbol
+
+    def __add__(self, other: "Element") -> "Molecule":
         """
         Return a molecule consisting of this element and the other element. Both Element are 1 in quantity
 
